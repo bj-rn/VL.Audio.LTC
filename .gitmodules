@@ -1,0 +1,4 @@
+[submodule "src/libltc"]
+	path = src/libltc
+	url = git@github.com:x42/libltc.git
+	branch = master

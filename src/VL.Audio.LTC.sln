@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34525.116
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LTCSharp", "LTCSharp\LTCSharp.vcxproj", "{6625FC6E-AC51-4276-9D95-57AB78E21B03}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libltc", "libltc_cpp\libltc.vcxproj", "{1888F07F-1021-46B9-9025-3AAA4EBF0A24}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VL.Audio.LTC", "VL.Audio.LTC\VL.Audio.LTC.csproj", "{4A5A4487-33D8-4900-B8AF-8E970F8FCACB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6625FC6E-AC51-4276-9D95-57AB78E21B03}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{6625FC6E-AC51-4276-9D95-57AB78E21B03}.Debug|Any CPU.Build.0 = Debug|x64
+		{6625FC6E-AC51-4276-9D95-57AB78E21B03}.Release|Any CPU.ActiveCfg = Release|x64
+		{6625FC6E-AC51-4276-9D95-57AB78E21B03}.Release|Any CPU.Build.0 = Release|x64
+		{1888F07F-1021-46B9-9025-3AAA4EBF0A24}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{1888F07F-1021-46B9-9025-3AAA4EBF0A24}.Debug|Any CPU.Build.0 = Debug|x64
+		{1888F07F-1021-46B9-9025-3AAA4EBF0A24}.Release|Any CPU.ActiveCfg = Release|x64
+		{1888F07F-1021-46B9-9025-3AAA4EBF0A24}.Release|Any CPU.Build.0 = Release|x64
+		{4A5A4487-33D8-4900-B8AF-8E970F8FCACB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A5A4487-33D8-4900-B8AF-8E970F8FCACB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A5A4487-33D8-4900-B8AF-8E970F8FCACB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A5A4487-33D8-4900-B8AF-8E970F8FCACB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E7982BF0-765C-475B-B328-1E32613E74F5}
+	EndGlobalSection
+EndGlobal

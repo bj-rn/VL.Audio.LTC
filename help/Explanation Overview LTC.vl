@@ -1,0 +1,253 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" xmlns:r="reflection" Id="QWP5jZG3fpaPeO87HBwetf" LanguageVersion="2024.6.0-0282-gd7691cc6a3" Version="0.128">
+  <NugetDependency Id="TLm27rLgDRMOfshTd8FG5S" Location="VL.CoreLib" Version="2024.6.0-0282-gd7691cc6a3" />
+  <Patch Id="ET5A39rC3G1LQ2XPOFRcj7">
+    <Canvas Id="UeizUXMvVlOQaGOJsgEosP" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="HpoIYeyguRQOSar6n6R4gc">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <FullNameCategoryReference ID="Primitive" />
+      </p:NodeReference>
+      <Patch Id="I8M8PlFBVzqPy77U62eL4B">
+        <Canvas Id="D3DqRTITLBcMUpEPJREElP" CanvasType="Group">
+          <Node Bounds="98,603,71,19" Id="RmY8Afqh5CyNBodAcIs1g6">
+            <p:NodeReference LastCategoryFullName="Audio.LTC" LastDependency="VL.Audio.LTC.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="LTCDecoder" />
+            </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
+            <Pin Id="PWPUJH3pYNyMV5Javzrdrz" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="OmMmgLsaPnKO75Wo3a88WZ" Name="Input" Kind="InputPin" />
+            <Pin Id="TM8QgGhHfwVQWnvgh4ZDhz" Name="Timecode" Kind="OutputPin" />
+          </Node>
+          <Pad Id="LahmxPufQLZOdjZQ3YKQ5s" Comment="Seconds" Bounds="220,726,35,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="Uj90pSJR4q5OTi1GmpNkaB" Comment="Frame" Bounds="240,699,35,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="FGmdvqd0W84MEBzIWeFzmy" Comment="Minutes" Bounds="201,752,35,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="QXEEdEfyjrwLsp2lD9kF9V" Comment="Hours" Bounds="180,783,35,15" ShowValueBox="true" isIOBox="true" />
+          <Node Bounds="98,653,145,19" Id="BkVdQOAVU9aLlXG4ZGOpJv">
+            <p:NodeReference LastCategoryFullName="Audio.LTC" LastDependency="VL.Audio.LTC.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="Split (Timecode)" />
+            </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
+            <Pin Id="UrdBFajQEMjQaJfRTbRVCG" Name="Input" Kind="InputPin" />
+            <Pin Id="MLsTyzQRv3aLmBICAzbffF" Name="Time Zone" Kind="OutputPin" />
+            <Pin Id="AEWbKDbH2eXPb8MBrx7MIN" Name="Years" Kind="OutputPin" />
+            <Pin Id="O9eefNG829DPEjfqJpEcqJ" Name="Months" Kind="OutputPin" />
+            <Pin Id="MVEXqonHoByQD1FSURVkaq" Name="Days" Kind="OutputPin" />
+            <Pin Id="AQRreG5IM8BOmrBMOeW0su" Name="Hours" Kind="OutputPin" />
+            <Pin Id="LUmNU7bly9XMClFiKDGe4C" Name="Minutes" Kind="OutputPin" />
+            <Pin Id="P5wzIaxkGczOKiESq8K0AS" Name="Seconds" Kind="OutputPin" />
+            <Pin Id="Athn7hUgBHqL0k4luG707u" Name="Frame" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="575,661,65,19" Id="TpAdlXwLBHMPPdcoEi3AVx">
+            <p:NodeReference LastCategoryFullName="Audio.LTC" LastDependency="VL.Audio.LTC.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="ToSeconds (Timecode)" />
+            </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
+            <Pin Id="VGj0sXJKVGkMF4thEFT2qK" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="DluJ3GyebI7LY8PF4opBHf" Name="Input" Kind="InputPin" />
+            <Pin Id="PVaUaPUs7cOLZaC6sgm0Xm" Name="FPS" Kind="InputPin" />
+            <Pin Id="NQvLrTG18PjONlfGtXRlQ2" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Pad Id="LmuMB0HsBvNLhJSyODa8XG" Comment="" Bounds="577,762,47,15" ShowValueBox="true" isIOBox="true" />
+          <Node Bounds="99,249,77,19" Id="BEWFn94UCDBLA6qD5TDNjW">
+            <p:NodeReference LastCategoryFullName="Audio.LTC" LastDependency="VL.Audio.LTC.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="FromSeconds (Timecode)" />
+            </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
+            <Pin Id="Nb2NFbT9JKWPT9mPlIIFT3" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="SwJQ6ptvL3VOaxLNP2kwWU" Name="Input" Kind="InputPin" />
+            <Pin Id="EisUybSHyapPW64EwUOWWC" Name="FPS" Kind="InputPin" />
+            <Pin Id="NtfmLQ7OoTNMWFPlvjm4Xf" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="99,96,45,19" Id="LVUm32LMkFuPKfzowBDnZX">
+            <p:NodeReference LastCategoryFullName="Animation" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="Category" Name="Animation" NeedsToBeDirectParent="true" />
+              <Choice Kind="ProcessAppFlag" Name="LFO" />
+            </p:NodeReference>
+            <Pin Id="C1unj44RHtSOdW3VIkcGfK" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="IX1g0O4S9Q9MmQghuH8ARv" Name="Clock" Kind="InputPin" IsHidden="true" />
+            <Pin Id="GIW3MM2ZeqPLNBVCMvhzX7" Name="New Clock" Kind="InputPin" IsHidden="true" />
+            <Pin Id="LVOZNMuIrLKNXprtOBIk6w" Name="Period" Kind="InputPin" />
+            <Pin Id="GFfXish4MRvPv8Aer0Gv3g" Name="Pause" Kind="InputPin" DefaultValue="False" />
+            <Pin Id="JQoD7f83KsVQYuZrtHHOQs" Name="Reset" Kind="ApplyPin" />
+            <Pin Id="SVOURP1IMTLMbhn49oqmgK" Name="Phase" Kind="OutputPin" />
+            <Pin Id="QRx3rh8uGC9PS3DY3EBUGd" Name="On New Cycle" Kind="OutputPin" />
+            <Pin Id="EmvBkp48CBHNaT5hwNQvCX" Name="Cycles" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="99,155,45,19" Id="Q3qYff5a1DYNnosiIF7jFS">
+            <p:NodeReference LastCategoryFullName="Math" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <FullNameCategoryReference ID="Math" />
+              <Choice Kind="OperationCallFlag" Name="+" />
+            </p:NodeReference>
+            <Pin Id="LNcHNufgOhgMoUASnmoxVx" Name="Input" Kind="InputPin" />
+            <Pin Id="MOWoHwcDcrHQX6JOpyggwZ" Name="Input 2" Kind="InputPin" />
+            <Pin Id="P2cwrtNlJeWLsUEnBKyoap" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="98,364,228,19" Id="VUNBz7hMhuIMMjO43iqgA9">
+            <p:NodeReference LastCategoryFullName="Audio.LTC" LastDependency="VL.Audio.LTC.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="LTCEncoder" />
+            </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
+            <Pin Id="USFL30gUq73NFGuOCxhs5O" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="ShvXNFQZIcKLQ1hy1TqGWw" Name="Time Code" Kind="InputPin" />
+            <Pin Id="A6UUgFnuFw4PXSui5KwGhZ" Name="Play" Kind="InputPin" />
+            <Pin Id="TraMR5XGeB4QKLttsveyiD" Name="FPS" Kind="InputPin" />
+            <Pin Id="VzJqvn4LznENgz9C8hve1p" Name="TV Standard" Kind="InputPin" />
+            <Pin Id="CYNoFi6IthvOFzTlYv9GHO" Name="BG Flags" Kind="InputPin" />
+            <Pin Id="RjncAQk0VqjMRkoS1v2dcS" Name="Output" Kind="OutputPin" />
+            <Pin Id="LCWVSc7Ql57P8DUTLDsckZ" Name="Seek" Kind="InputPin" DefaultValue="False" />
+          </Node>
+          <Pad Id="SBrG4Cv3EBFMB8eHy7FryJ" Comment="FPS" Bounds="408,92,35,15" ShowValueBox="true" isIOBox="true" Value="30">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Integer32" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="FDRfpiuC0ZdO5BrXfpe8sX" Comment="Play" Bounds="145,307,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="U7Y3WrKH7zAPHyuQjGDKlc" Comment="" Bounds="100,423,190,132" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="UbchBN7ETJZLvcGwQXwRAB" Comment="" Bounds="101,213,41,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="VGRNAi9SuZIPpJV1cDrxEe" Comment="TV Standard" Bounds="234,237,78,15" ShowValueBox="true" isIOBox="true" Value="TV525_60i">
+            <p:TypeAnnotation LastCategoryFullName="Audio.LTC" LastDependency="VL.Audio.LTC.vl">
+              <Choice Kind="TypeFlag" Name="TVStandard" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="PoDHabkGblzPooG7RhM4gC" Comment="BG Flags" Bounds="279,271,110,15" ShowValueBox="true" isIOBox="true" Value="NONE">
+            <p:TypeAnnotation LastCategoryFullName="Audio.LTC" LastDependency="VL.Audio.LTC.vl">
+              <Choice Kind="TypeFlag" Name="BGFlags" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Node Bounds="321,316,57,19" Id="Jt2u8ZwS4pmMZjVqvTjuPn">
+            <p:NodeReference LastCategoryFullName="Control" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="Changed" />
+            </p:NodeReference>
+            <Pin Id="GKiqTYNsuFwPHIsKMw55eN" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="Qb8VaeAht7ZMUCba1yVqH9" Name="Changed On Create" Kind="InputPin" IsHidden="true" />
+            <Pin Id="EBdntulnsB6MGACJy9BI39" Name="Value" Kind="InputPin" />
+            <Pin Id="JiktpPLMxiYLfS6L4LLZ6Z" Name="Result" Kind="OutputPin" />
+            <Pin Id="ELhiknVRTEfLsI135xKOXE" Name="Unchanged" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="575,367,228,19" Id="JFMPXydNQKuM8sRmqyyHys">
+            <p:NodeReference LastCategoryFullName="Audio.LTC" LastDependency="VL.Audio.LTC.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="LTCEncoder" />
+            </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
+            <Pin Id="Lvax2G46kHYP4RkIy8wCG2" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="IoxmF1co8l9QdXHeiw3yn4" Name="Time Code" Kind="InputPin" />
+            <Pin Id="Kk2lYjUGWf7OFL8vymldNA" Name="Play" Kind="InputPin" />
+            <Pin Id="PfFtX7WfkKIOtw9gzCbi0A" Name="FPS" Kind="InputPin" />
+            <Pin Id="P3GbhXjvSvFPZus35xXhRy" Name="TV Standard" Kind="InputPin" />
+            <Pin Id="NM7tvmnWWfxPX5JGlRBhrS" Name="BG Flags" Kind="InputPin" />
+            <Pin Id="JX4oFSjrSVTL9v6g60EuBE" Name="Output" Kind="OutputPin" />
+            <Pin Id="LU2COeFW0psMl0fCpXDGCJ" Name="Seek" Kind="InputPin" DefaultValue="False" />
+          </Node>
+          <Pad Id="G2biuqoqRO3MnYsrDTlA4f" Comment="Play" Bounds="622,310,35,35" ShowValueBox="true" isIOBox="true" Value="True">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Node Bounds="575,620,71,19" Id="I1NLRYBquxtPy3GvqUQe8u">
+            <p:NodeReference LastCategoryFullName="Audio.LTC" LastDependency="VL.Audio.LTC.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="LTCDecoder" />
+            </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
+            <Pin Id="GwiKeXzcWAGOkHkCQ1VnzL" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="By9Y2bnv660PIi30fBPOa2" Name="Input" Kind="InputPin" />
+            <Pin Id="OziEvgyPfJwOEo8fMIXHaw" Name="Timecode" Kind="OutputPin" />
+          </Node>
+          <Pad Id="PTAm4OOwoMnLVe4gENHohB" Comment="" Bounds="577,431,190,132" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="RzxxBf5bXBTO2mykFoFKIz" Comment="TV Standard" Bounds="712,239,78,15" ShowValueBox="true" isIOBox="true" Value="TV525_60i">
+            <p:TypeAnnotation LastCategoryFullName="Audio.LTC" LastDependency="VL.Audio.LTC.vl">
+              <Choice Kind="TypeFlag" Name="TVStandard" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="PcvqV7CbsWcNRHzOZ0MO3j" Comment="BG Flags" Bounds="755,280,110,15" ShowValueBox="true" isIOBox="true" Value="NONE">
+            <p:TypeAnnotation LastCategoryFullName="Audio.LTC" LastDependency="VL.Audio.LTC.vl">
+              <Choice Kind="TypeFlag" Name="BGFlags" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Node Bounds="748,629,65,26" Id="OywriBWorO1MClwh6BnnSb">
+            <p:NodeReference LastCategoryFullName="Collections.Sequence" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="MutableInterfaceType" Name="Sequence" NeedsToBeDirectParent="true" />
+              <Choice Kind="OperationCallFlag" Name="FromValue" />
+            </p:NodeReference>
+            <Pin Id="V1saMtk9GGJNDWcW24Wd5R" Name="Input" Kind="InputPin" />
+            <Pin Id="GKoOOcp0Xc6LI9ScH6QQOg" Name="Result" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="748,745,60,19" Id="MvRjRnDE6vSO7UJY2DOXxN">
+            <p:NodeReference LastCategoryFullName="Audio.Sink" LastDependency="VL.Audio.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="AudioOut" />
+            </p:NodeReference>
+            <Pin Id="RYCTkXBQvWMO2AI8mRBw7I" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="BkFMo1fR6O7OrKEtiMcitz" Name="Input" Kind="InputPin" />
+            <Pin Id="CBUH4OEOqdFOQiW4vPWunz" Name="Channel Offset" Kind="InputPin" />
+          </Node>
+          <Pad Id="U8FOSeqx8GHMG4zwOrEn0Z" Comment="make sure to turn down the volume" Bounds="750,728,10,10" ShowValueBox="true" isIOBox="true" />
+        </Canvas>
+        <Patch Id="Iql6YoywPFuM2FmfXQ3aiG" Name="Create" />
+        <Patch Id="GfZ2HETUHimLlqHKatlsLL" Name="Update" />
+        <ProcessDefinition Id="BKrmYS807OUPOYIy8984rc">
+          <Fragment Id="VaaBbmU4IZSQDBQEh65irc" Patch="Iql6YoywPFuM2FmfXQ3aiG" Enabled="true" />
+          <Fragment Id="UTu6W201LsiPmViwtZBkoZ" Patch="GfZ2HETUHimLlqHKatlsLL" Enabled="true" />
+        </ProcessDefinition>
+        <Link Id="HgE0lPyWMNmNuZKrddkERp" Ids="TM8QgGhHfwVQWnvgh4ZDhz,UrdBFajQEMjQaJfRTbRVCG" />
+        <Link Id="G7T3AvivTkBMu521T8CyLB" Ids="Athn7hUgBHqL0k4luG707u,Uj90pSJR4q5OTi1GmpNkaB" />
+        <Link Id="QhKG1nYUi3zNNwMmoADnvH" Ids="P5wzIaxkGczOKiESq8K0AS,LahmxPufQLZOdjZQ3YKQ5s" />
+        <Link Id="VTfpVN8HPafN4vLXE1qp82" Ids="LUmNU7bly9XMClFiKDGe4C,FGmdvqd0W84MEBzIWeFzmy" />
+        <Link Id="RixYsP3spm6OE03nWKsFvf" Ids="AQRreG5IM8BOmrBMOeW0su,QXEEdEfyjrwLsp2lD9kF9V" />
+        <Link Id="AShp6dfHIhOOeBmkdMjncv" Ids="NQvLrTG18PjONlfGtXRlQ2,LmuMB0HsBvNLhJSyODa8XG" />
+        <Link Id="M8UA49WTi0FM5rsDhixEwn" Ids="SVOURP1IMTLMbhn49oqmgK,LNcHNufgOhgMoUASnmoxVx" />
+        <Link Id="IgaxsSI38eLPr5YK1mspII" Ids="EmvBkp48CBHNaT5hwNQvCX,MOWoHwcDcrHQX6JOpyggwZ" />
+        <Link Id="OuydRj9soYMOguSkCxsn36" Ids="SBrG4Cv3EBFMB8eHy7FryJ,TraMR5XGeB4QKLttsveyiD" />
+        <Link Id="GUkiuTJYkHVNuaWiQUseEf" Ids="SBrG4Cv3EBFMB8eHy7FryJ,EisUybSHyapPW64EwUOWWC" />
+        <Link Id="P5m2tnPPclMMEtu42p0eez" Ids="FDRfpiuC0ZdO5BrXfpe8sX,A6UUgFnuFw4PXSui5KwGhZ" />
+        <Link Id="HEBVD2hy3vHNsDi0IKJgVi" Ids="RjncAQk0VqjMRkoS1v2dcS,OmMmgLsaPnKO75Wo3a88WZ" />
+        <Link Id="Ip6BtarUsAOOygo1dQSUz3" Ids="P2cwrtNlJeWLsUEnBKyoap,UbchBN7ETJZLvcGwQXwRAB" />
+        <Link Id="I04Xfa1bQGbPG4YW0trXbb" Ids="UbchBN7ETJZLvcGwQXwRAB,SwJQ6ptvL3VOaxLNP2kwWU" />
+        <Link Id="ECn0K2OT63BNDzwA0AILy0" Ids="VGRNAi9SuZIPpJV1cDrxEe,VzJqvn4LznENgz9C8hve1p" />
+        <Link Id="UxbVW1YkCSgMTVwpfzVlgG" Ids="PoDHabkGblzPooG7RhM4gC,CYNoFi6IthvOFzTlYv9GHO" />
+        <Link Id="DgpI1QTNqv9Ozw5GHkPGmw" Ids="SBrG4Cv3EBFMB8eHy7FryJ,PVaUaPUs7cOLZaC6sgm0Xm" />
+        <Link Id="IhRHTWqkoTKLALeMyegFSD" Ids="NtfmLQ7OoTNMWFPlvjm4Xf,EBdntulnsB6MGACJy9BI39" />
+        <Link Id="CRptLzm9P4jLr3plTkvSQ2" Ids="NtfmLQ7OoTNMWFPlvjm4Xf,ShvXNFQZIcKLQ1hy1TqGWw" />
+        <Link Id="R67iydd4iwvLPjOzSz147a" Ids="G2biuqoqRO3MnYsrDTlA4f,Kk2lYjUGWf7OFL8vymldNA" />
+        <Link Id="UJldcJVgHCENC9B6ILxJvC" Ids="RjncAQk0VqjMRkoS1v2dcS,U7Y3WrKH7zAPHyuQjGDKlc" />
+        <Link Id="EkkT1vIoJ5vOGVbNV1kvJ9" Ids="SBrG4Cv3EBFMB8eHy7FryJ,PfFtX7WfkKIOtw9gzCbi0A" />
+        <Link Id="BritLMnUb20Lux2qNJomJ7" Ids="JX4oFSjrSVTL9v6g60EuBE,PTAm4OOwoMnLVe4gENHohB" />
+        <Link Id="AIbNXD4p8qXNei1Wgvi2OA" Ids="PTAm4OOwoMnLVe4gENHohB,By9Y2bnv660PIi30fBPOa2" />
+        <Link Id="PGVRn84ENQOQCYBgWFsubv" Ids="OziEvgyPfJwOEo8fMIXHaw,DluJ3GyebI7LY8PF4opBHf" />
+        <Link Id="Cf6kpY5OWrhP9wJ9LwKZqL" Ids="RzxxBf5bXBTO2mykFoFKIz,P3GbhXjvSvFPZus35xXhRy" />
+        <Link Id="JGo7zEnDzaQMbBNDmymeJ9" Ids="PcvqV7CbsWcNRHzOZ0MO3j,NM7tvmnWWfxPX5JGlRBhrS" />
+        <Link Id="VQKiqpJcRcqP0olUdaSVzI" Ids="JiktpPLMxiYLfS6L4LLZ6Z,LCWVSc7Ql57P8DUTLDsckZ" />
+        <Link Id="HMGLX09dZ2vNCydHnrTddN" Ids="PTAm4OOwoMnLVe4gENHohB,V1saMtk9GGJNDWcW24Wd5R" />
+        <Link Id="BLSyVzUepSdNbQGgJ6feO5" Ids="GKoOOcp0Xc6LI9ScH6QQOg,U8FOSeqx8GHMG4zwOrEn0Z" />
+      </Patch>
+    </Node>
+  </Patch>
+  <DocumentDependency Id="MKZjdQ5pWcfQI8U8UYGHqZ" Location="../VL.Audio.LTC.vl" />
+  <NugetDependency Id="NyFlhQQJuhYMy9Nsw2gPRg" Location="VL.Audio" Version="1.4.9-preview" />
+</Document>
