@@ -32,3 +32,5 @@ Might be hardware and/or driver dependend. So make sure to check the continuity 
 VL.Audio, VVVV.Audio and libtc are released under LGPL-3.0 license. LTCSharp is released under MIT license.
 
 
+#### Credits
+Initial development and release sponsored by [wirmachenbunt](https://wirmachenbunt.de/).
