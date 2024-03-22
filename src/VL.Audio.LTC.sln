@@ -7,7 +7,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LTCSharp", "LTCSharp\LTCSha
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libltc", "libltc_cpp\libltc.vcxproj", "{1888F07F-1021-46B9-9025-3AAA4EBF0A24}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VL.Audio.LTC", "VL.Audio.LTC\VL.Audio.LTC.csproj", "{4A5A4487-33D8-4900-B8AF-8E970F8FCACB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VL.Audio.LTC", "VL.Audio.LTC\VL.Audio.LTC.csproj", "{4A5A4487-33D8-4900-B8AF-8E970F8FCACB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,8 +25,8 @@ Global
 		{1888F07F-1021-46B9-9025-3AAA4EBF0A24}.Release|Any CPU.Build.0 = Release|x64
 		{4A5A4487-33D8-4900-B8AF-8E970F8FCACB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{4A5A4487-33D8-4900-B8AF-8E970F8FCACB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4A5A4487-33D8-4900-B8AF-8E970F8FCACB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4A5A4487-33D8-4900-B8AF-8E970F8FCACB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A5A4487-33D8-4900-B8AF-8E970F8FCACB}.Release|Any CPU.ActiveCfg = Release|x64
+		{4A5A4487-33D8-4900-B8AF-8E970F8FCACB}.Release|Any CPU.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
