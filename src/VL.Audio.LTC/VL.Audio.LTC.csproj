@@ -5,7 +5,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>disable</Nullable>
 	  <OutputPath>..\..\lib\</OutputPath>
-	  <Platforms>AnyCPU;x64</Platforms>
+	  <Platforms>x64</Platforms>
   </PropertyGroup>
 
   <ItemGroup>
@@ -16,5 +16,9 @@
   <ItemGroup>
     <ProjectReference Include="..\LTCSharp\LTCSharp.vcxproj" />
   </ItemGroup>
+
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="copy $(OutDir)Ijwhost.dll $(OutDir)..\..\runtimes\$(PlatformName)\native\Ijwhost.dll" />
+  </Target>
 
 </Project>
