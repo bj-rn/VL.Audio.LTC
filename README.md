@@ -15,16 +15,31 @@ Try it with vvvv, the visual live-programming environment for .NET
 Download: http://visualprogramming.net
 
 ## Some Remarks
+LTC only supports framerates of 24, 25 and 30 FPS that are tradionally encoutered in the context of film/video. As long as software runs at those framerates all should be fine and dandy, seconds will be split into [0 ... 23], [0 ... 24], [0 ... 29] frames.
 
-LTC only supports framerates of 24, 25 and 30 that are tradionally encoutered in the context of film. 
-As long as software runs at those framerates all should be fine and dandy, seconds will be split into [0 ... 23], [0 ... 24], [0 ... 29] frames.
+60 (or 50) fps like you'd more likely use in real time media are not supported though. You need to pick a LTC standard that is a divisor of your desired framerate. The count of frames returned will then be multiplied by the ratio of that division. So for a desired Mainloop framerate of 60 FPS you'd pick an LTC standard that uses 30 FPS, the decoder will then ideally return the following frames [0,0,1,1,2,2,3,3 ... 29,29] and you need to account for that (see Interpolate on the ToSeconds node).
 
-60 (or 50) fps like you'd more likely use in real time media are not supported though. You need to pick a LTC standard that is a divisor of your desired framerate.
-The count of frames returned will then be multiplied by the result of that division. So for a desired framerate of 60 you'd pick an LTC standard that uses 30 fps,
-the decoder will then ideally return the following frames [0,0,1,1,2,2,3,3 ... 29,29] and you need to account for that.
-But here things can get finicky. During testing I encountered for example the following [0,0,1,1,1,2,3,3 ... 29,29] and [wirmachenbunt](https://wirmachenbunt.de/) even reported that some frames 
-totally got lost like [0,0,1,1,1,1,3,3 ... 29,29]. From what I can tell this was happening when using WASAPI or ASIO with a audio buffer size >256. 
-Might be hardware and/or driver dependend. So make sure to check the continuity of the incoming frames (by queuing them for example).
+But things can get finicky.
+During testing I encountered for example the following [0,0,1,1,1,2,3,3 ... 29,29] and [wirmachenbunt](https://wirmachenbunt.de/) even reported that some frames totally got lost like [0,0,1,1,1,1,3,3 ... 29,29]. 
+From what I can tell this is more likely to happen when using WASAPI or ASIO with a audio buffer size >256. Might be hardware and/or driver dependend. So make sure to check the continuity of the incoming frames (by queuing them for example).
+
+TBH if you are working in a professional context and can spare the money using a dedicated timecode reader card might be the better option.
+
+### Issues with C++/CLI
+C++/CLI libraries in .NET Core need a shim called *Ijwhost.dll* for finding and loading the runtime. Currently there seems to be no "official" method on how to deal with this shim when having a C++/CLI library in a NuGet package. Some say to include it in the package other say  that this can easily lead to dll hell (what happens when to packages come woth different versions of the shim?). Here are some related github issues with further info:
+
+* [No Ijwhost.dll when referencing C++/CLR NuGet package from .NET 6 C# app](https://github.com/dotnet/sdk/issues/24310)
+* [How to avoid double writes for ijwhost.dll in NuGet packages?](https://github.com/dotnet/sdk/issues/34213)
+* [C++/CLI libraries may fail to load due to ijwhost.dll not being on the search path] (https://github.com/dotnet/runtime/issues/38231)
+* [Ijwhost.dll loading not always working for C++/CLI assembly](https://github.com/dotnet/runtime/issues/37972)
+* [FileNotFoundException in .net 6](https://github.com/AmpScm/SharpProj/issues/25)
+
+I tried the "workarounds" mentioned in the issues above like including a mainfest file for *Ijwhost.dll*. But:
+* vvvv only finds the shim when located alongside *LTCSharp.dll*, e.g. both files are in `VL.Audio.LTC\lib\net6.0-windows`
+* when the shim is located in `VL.Audio.LTC\runtimes\win-x64\native` as suggested by some vvvv doesn't pick it up
+* in neither case the shim gets copied to the output when exporting a document referencing *VL.Audio.LTC*
+
+---
 
 
 ### License
