@@ -26,7 +26,7 @@ From what I can tell this is more likely to happen when using WASAPI or ASIO wit
 TBH if you are working in a professional context and can spare the money using a dedicated timecode reader card might be the better option.
 
 ### Issues with C++/CLI
-C++/CLI libraries in .NET Core need a shim called *Ijwhost.dll* for finding and loading the runtime. Currently there seems to be no "official" method on how to deal with this shim when having a C++/CLI library in a NuGet package. Some say to include it in the package other say  that this can easily lead to dll hell (what happens when to packages come woth different versions of the shim?). Here are some related github issues with further info:
+C++/CLI libraries in .NET Core need a shim called *Ijwhost.dll* for finding and loading the runtime. Currently there seems to be no "official" method on how to deal with this shim when having a C++/CLI library in a NuGet package. Some say to include it in the package other say  that this can easily lead to dll hell (what happens when to packages come with different versions of the shim?). Here are some related github issues with further info:
 
 * [No Ijwhost.dll when referencing C++/CLR NuGet package from .NET 6 C# app](https://github.com/dotnet/sdk/issues/24310)
 * [How to avoid double writes for ijwhost.dll in NuGet packages?](https://github.com/dotnet/sdk/issues/34213)
