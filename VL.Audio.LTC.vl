@@ -1620,6 +1620,5 @@
   </Patch>
   <NugetDependency Id="LXjZFj7ehXPLP6jfIUp4JW" Location="VL.Audio" IsFriend="true" Version="1.5.0" />
   <PlatformDependency Id="MMpGrVDW2T8MfWosP6agyK" Location="./lib/net6.0-windows/VL.Audio.LTC.dll" />
-  <PlatformDependency Id="Uw6sqBdlF6mMbO4GPW0vwR" Location="./lib/net6.0-windows/LTCSharp.dll" />
-  <PlatformDependency Id="Npf8AX4jcJkQZwgdvftcW1" Location="../VL.Audio/lib/net6.0-windows/LTCSharp.dll" />
+  <PlatformDependency Id="VgQDBz8pOVfMOfzSSeLDOu" Location="./lib/net6.0-windows/LTCSharp.dll" />
 </Document>
