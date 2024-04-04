@@ -34,7 +34,7 @@ C++/CLI libraries in .NET Core need a shim called *Ijwhost.dll* for finding and 
 * [Ijwhost.dll loading not always working for C++/CLI assembly](https://github.com/dotnet/runtime/issues/37972)
 * [FileNotFoundException in .net 6](https://github.com/AmpScm/SharpProj/issues/25)
 
-I tried the "workarounds" mentioned in the issues above like including a mainfest file for *Ijwhost.dll*. But:
+I tried the "workarounds" mentioned in the issues above like including a manifest file for *Ijwhost.dll*. But:
 * vvvv only finds the shim when located alongside *LTCSharp.dll*, e.g. both files are in `VL.Audio.LTC\lib\net6.0-windows`
 * when the shim is located in `VL.Audio.LTC\runtimes\win-x64\native` as suggested by some vvvv doesn't pick it up
 * in neither case the shim gets copied to the output when exporting a document referencing *VL.Audio.LTC*
