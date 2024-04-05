@@ -30,7 +30,7 @@ C++/CLI libraries in .NET Core need a shim called *Ijwhost.dll* for finding and 
 
 * [No Ijwhost.dll when referencing C++/CLR NuGet package from .NET 6 C# app](https://github.com/dotnet/sdk/issues/24310)
 * [How to avoid double writes for ijwhost.dll in NuGet packages?](https://github.com/dotnet/sdk/issues/34213)
-* [C++/CLI libraries may fail to load due to ijwhost.dll not being on the search path] (https://github.com/dotnet/runtime/issues/38231)
+* [C++/CLI libraries may fail to load due to ijwhost.dll not being on the search path](https://github.com/dotnet/runtime/issues/38231)
 * [Ijwhost.dll loading not always working for C++/CLI assembly](https://github.com/dotnet/runtime/issues/37972)
 * [FileNotFoundException in .net 6](https://github.com/AmpScm/SharpProj/issues/25)
 
