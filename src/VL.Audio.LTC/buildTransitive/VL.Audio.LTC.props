@@ -1,0 +1,6 @@
+<Project>
+  <PropertyGroup>
+    <!-- Not entirely sure this is needed -->
+    <UseIJWHost>true</UseIJWHost>
+  </PropertyGroup>
+</Project>
