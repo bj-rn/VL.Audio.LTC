@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="Qvb8AeOQH33OinPMCFNRhM" LanguageVersion="2024.6.0" Version="0.128">
-  <NugetDependency Id="UOWk1tqZupmLvHwx83yMiC" Location="VL.CoreLib" Version="2024.6.0" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="Qvb8AeOQH33OinPMCFNRhM" LanguageVersion="2024.6.2" Version="0.128">
+  <NugetDependency Id="UOWk1tqZupmLvHwx83yMiC" Location="VL.CoreLib" Version="2024.6.2" />
   <Patch Id="RpjXKsMrd5ZPdk7vh2pcry">
     <Canvas Id="Mk4Sn9b4gsPNwhP0A9ggbd" DefaultCategory="Audio.LTC" CanvasType="FullCategory" />
     <!--
@@ -1620,5 +1620,5 @@
   </Patch>
   <NugetDependency Id="LXjZFj7ehXPLP6jfIUp4JW" Location="VL.Audio" IsFriend="true" Version="1.5.0" />
   <PlatformDependency Id="MMpGrVDW2T8MfWosP6agyK" Location="./lib/net6.0-windows/VL.Audio.LTC.dll" />
-  <PlatformDependency Id="VgQDBz8pOVfMOfzSSeLDOu" Location="./lib/net6.0-windows/LTCSharp.dll" />
+  <PlatformDependency Id="UE4uNE6s67ZNviczHa60EL" Location="./lib/net6.0-windows/LTCSharp.dll" />
 </Document>
