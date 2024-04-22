@@ -20,8 +20,6 @@
         <dependency id="VL.Audio" version="1.5.0" />
       </group>
     </dependencies>
-
-    <icon>resources\icon.png</icon>
   </metadata>
   <files>
     <file src="..\*.vl"/>
