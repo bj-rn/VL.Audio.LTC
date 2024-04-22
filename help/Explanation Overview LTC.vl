@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="QWP5jZG3fpaPeO87HBwetf" LanguageVersion="2024.6.2" Version="0.128">
+<Document xmlns:p="property" xmlns:r="reflection" Id="KeukLx7aXSONpsIbU9hgzR" LanguageVersion="2024.6.2" Version="0.128">
   <NugetDependency Id="TLm27rLgDRMOfshTd8FG5S" Location="VL.CoreLib" Version="2024.6.2" />
   <Patch Id="ET5A39rC3G1LQ2XPOFRcj7">
     <Canvas Id="UeizUXMvVlOQaGOJsgEosP" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
@@ -15,7 +15,7 @@
       </p:NodeReference>
       <Patch Id="I8M8PlFBVzqPy77U62eL4B">
         <Canvas Id="D3DqRTITLBcMUpEPJREElP" CanvasType="Group">
-          <Node Bounds="93,886,71,19" Id="RmY8Afqh5CyNBodAcIs1g6">
+          <Node Bounds="96,996,71,19" Id="RmY8Afqh5CyNBodAcIs1g6">
             <p:NodeReference LastCategoryFullName="Audio.LTC" LastDependency="VL.Audio.LTC.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="LTCDecoder" />
@@ -25,11 +25,11 @@
             <Pin Id="OmMmgLsaPnKO75Wo3a88WZ" Name="Input" Kind="InputPin" />
             <Pin Id="TM8QgGhHfwVQWnvgh4ZDhz" Name="Timecode" Kind="OutputPin" />
           </Node>
-          <Pad Id="LahmxPufQLZOdjZQ3YKQ5s" Comment="Seconds" Bounds="215,1009,35,15" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="Uj90pSJR4q5OTi1GmpNkaB" Comment="Frame" Bounds="235,982,35,15" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="FGmdvqd0W84MEBzIWeFzmy" Comment="Minutes" Bounds="196,1035,35,15" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="QXEEdEfyjrwLsp2lD9kF9V" Comment="Hours" Bounds="175,1066,35,15" ShowValueBox="true" isIOBox="true" />
-          <Node Bounds="93,936,145,19" Id="BkVdQOAVU9aLlXG4ZGOpJv">
+          <Pad Id="LahmxPufQLZOdjZQ3YKQ5s" Comment="Seconds" Bounds="218,1119,35,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="Uj90pSJR4q5OTi1GmpNkaB" Comment="Frame" Bounds="238,1092,35,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="FGmdvqd0W84MEBzIWeFzmy" Comment="Minutes" Bounds="199,1145,35,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="QXEEdEfyjrwLsp2lD9kF9V" Comment="Hours" Bounds="178,1176,35,15" ShowValueBox="true" isIOBox="true" />
+          <Node Bounds="96,1046,145,19" Id="BkVdQOAVU9aLlXG4ZGOpJv">
             <p:NodeReference LastCategoryFullName="Audio.LTC" LastDependency="VL.Audio.LTC.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="Split (Timecode)" />
@@ -45,10 +45,10 @@
             <Pin Id="P5wzIaxkGczOKiESq8K0AS" Name="Seconds" Kind="OutputPin" />
             <Pin Id="Athn7hUgBHqL0k4luG707u" Name="Frame" Kind="OutputPin" />
           </Node>
-          <Node Bounds="776,1081,65,19" Id="TpAdlXwLBHMPPdcoEi3AVx">
+          <Node Bounds="1139,1191,65,19" Id="TpAdlXwLBHMPPdcoEi3AVx">
             <p:NodeReference LastCategoryFullName="Audio.LTC" LastDependency="VL.Audio.LTC.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="ProcessAppFlag" Name="ToSeconds (Timecode)" />
+              <Choice Kind="ProcessAppFlag" Name="ToSeconds (Timecode Interpolate)" />
             </p:NodeReference>
             <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
             <Pin Id="VGj0sXJKVGkMF4thEFT2qK" Name="Node Context" Kind="InputPin" IsHidden="true" />
@@ -58,8 +58,8 @@
             <Pin Id="Of2lkTIjnlnQYVtRvjC4hA" Name="Interpolate" Kind="InputPin" />
             <Pin Id="NQvLrTG18PjONlfGtXRlQ2" Name="Output" Kind="OutputPin" />
           </Node>
-          <Pad Id="LmuMB0HsBvNLhJSyODa8XG" Comment="" Bounds="778,1144,47,15" ShowValueBox="true" isIOBox="true" />
-          <Node Bounds="94,427,77,19" Id="BEWFn94UCDBLA6qD5TDNjW">
+          <Pad Id="LmuMB0HsBvNLhJSyODa8XG" Comment="" Bounds="1141,1254,47,15" ShowValueBox="true" isIOBox="true" />
+          <Node Bounds="97,537,77,19" Id="BEWFn94UCDBLA6qD5TDNjW">
             <p:NodeReference LastCategoryFullName="Audio.LTC" LastDependency="VL.Audio.LTC.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="FromSeconds (Timecode)" />
@@ -70,7 +70,7 @@
             <Pin Id="EisUybSHyapPW64EwUOWWC" Name="FPS" Kind="InputPin" />
             <Pin Id="NtfmLQ7OoTNMWFPlvjm4Xf" Name="Output" Kind="OutputPin" />
           </Node>
-          <Node Bounds="94,274,45,19" Id="LVUm32LMkFuPKfzowBDnZX">
+          <Node Bounds="97,384,45,19" Id="LVUm32LMkFuPKfzowBDnZX">
             <p:NodeReference LastCategoryFullName="Animation" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="Category" Name="Animation" NeedsToBeDirectParent="true" />
@@ -86,7 +86,7 @@
             <Pin Id="QRx3rh8uGC9PS3DY3EBUGd" Name="On New Cycle" Kind="OutputPin" />
             <Pin Id="EmvBkp48CBHNaT5hwNQvCX" Name="Cycles" Kind="OutputPin" />
           </Node>
-          <Node Bounds="94,333,45,19" Id="Q3qYff5a1DYNnosiIF7jFS">
+          <Node Bounds="97,443,45,19" Id="Q3qYff5a1DYNnosiIF7jFS">
             <p:NodeReference LastCategoryFullName="Math" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <FullNameCategoryReference ID="Math" />
@@ -96,7 +96,7 @@
             <Pin Id="MOWoHwcDcrHQX6JOpyggwZ" Name="Input 2" Kind="InputPin" />
             <Pin Id="P2cwrtNlJeWLsUEnBKyoap" Name="Output" Kind="OutputPin" />
           </Node>
-          <Node Bounds="93,587,228,19" Id="VUNBz7hMhuIMMjO43iqgA9">
+          <Node Bounds="96,697,228,19" Id="VUNBz7hMhuIMMjO43iqgA9">
             <p:NodeReference LastCategoryFullName="Audio.LTC" LastDependency="VL.Audio.LTC.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="LTCEncoder" />
@@ -111,7 +111,7 @@
             <Pin Id="RjncAQk0VqjMRkoS1v2dcS" Name="Output" Kind="OutputPin" />
             <Pin Id="LCWVSc7Ql57P8DUTLDsckZ" Name="Seek" Kind="InputPin" DefaultValue="False" />
           </Node>
-          <Pad Id="SBrG4Cv3EBFMB8eHy7FryJ" Comment="LTC FPS" Bounds="185,272,35,33" ShowValueBox="true" isIOBox="true" Value="30">
+          <Pad Id="SBrG4Cv3EBFMB8eHy7FryJ" Comment="LTC FPS" Bounds="188,382,35,33" ShowValueBox="true" isIOBox="true" Value="30">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Integer32" />
             </p:TypeAnnotation>
@@ -119,7 +119,7 @@
               <p:fontsize p:Type="Int32">16</p:fontsize>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="FDRfpiuC0ZdO5BrXfpe8sX" Comment="Play" Bounds="139,485,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="FDRfpiuC0ZdO5BrXfpe8sX" Comment="Play" Bounds="142,595,35,35" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
             </p:TypeAnnotation>
@@ -127,9 +127,9 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="U7Y3WrKH7zAPHyuQjGDKlc" Comment="" Bounds="95,706,190,132" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="UbchBN7ETJZLvcGwQXwRAB" Comment="" Bounds="96,391,53,15" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="VGRNAi9SuZIPpJV1cDrxEe" Comment="TV Standard" Bounds="230,382,63,58" ShowValueBox="true" isIOBox="true" Value="TV525_60i">
+          <Pad Id="U7Y3WrKH7zAPHyuQjGDKlc" Comment="" Bounds="98,816,190,132" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="UbchBN7ETJZLvcGwQXwRAB" Comment="" Bounds="99,501,53,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="VGRNAi9SuZIPpJV1cDrxEe" Comment="TV Standard" Bounds="233,492,63,58" ShowValueBox="true" isIOBox="true" Value="TV525_60i">
             <p:TypeAnnotation LastCategoryFullName="Audio.LTC" LastDependency="VL.Audio.LTC.vl">
               <Choice Kind="TypeFlag" Name="TVStandard" />
             </p:TypeAnnotation>
@@ -137,12 +137,12 @@
               <p:selectionmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.SelectionModeEnum">VerticalList</p:selectionmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="PoDHabkGblzPooG7RhM4gC" Comment="BG Flags" Bounds="273,474,110,15" ShowValueBox="true" isIOBox="true" Value="NONE">
+          <Pad Id="PoDHabkGblzPooG7RhM4gC" Comment="BG Flags" Bounds="276,584,110,15" ShowValueBox="true" isIOBox="true" Value="NONE">
             <p:TypeAnnotation LastCategoryFullName="Audio.LTC" LastDependency="VL.Audio.LTC.vl">
               <Choice Kind="TypeFlag" Name="BGFlags" />
             </p:TypeAnnotation>
           </Pad>
-          <Node Bounds="316,499,57,19" Id="Jt2u8ZwS4pmMZjVqvTjuPn">
+          <Node Bounds="319,609,57,19" Id="Jt2u8ZwS4pmMZjVqvTjuPn">
             <p:NodeReference LastCategoryFullName="Control" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Changed" />
@@ -153,7 +153,7 @@
             <Pin Id="JiktpPLMxiYLfS6L4LLZ6Z" Name="Result" Kind="OutputPin" />
             <Pin Id="ELhiknVRTEfLsI135xKOXE" Name="Unchanged" Kind="OutputPin" />
           </Node>
-          <Node Bounds="775,583,228,19" Id="JFMPXydNQKuM8sRmqyyHys">
+          <Node Bounds="1138,693,228,19" Id="JFMPXydNQKuM8sRmqyyHys">
             <p:NodeReference LastCategoryFullName="Audio.LTC" LastDependency="VL.Audio.LTC.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="LTCEncoder" />
@@ -168,7 +168,7 @@
             <Pin Id="JX4oFSjrSVTL9v6g60EuBE" Name="Output" Kind="OutputPin" />
             <Pin Id="LU2COeFW0psMl0fCpXDGCJ" Name="Seek" Kind="InputPin" DefaultValue="False" />
           </Node>
-          <Pad Id="G2biuqoqRO3MnYsrDTlA4f" Comment="Play" Bounds="822,526,35,35" ShowValueBox="true" isIOBox="true" Value="True">
+          <Pad Id="G2biuqoqRO3MnYsrDTlA4f" Comment="Play" Bounds="1185,636,35,35" ShowValueBox="true" isIOBox="true" Value="True">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
             </p:TypeAnnotation>
@@ -176,7 +176,7 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Node Bounds="775,896,71,19" Id="I1NLRYBquxtPy3GvqUQe8u">
+          <Node Bounds="1138,1006,71,19" Id="I1NLRYBquxtPy3GvqUQe8u">
             <p:NodeReference LastCategoryFullName="Audio.LTC" LastDependency="VL.Audio.LTC.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="LTCDecoder" />
@@ -186,8 +186,8 @@
             <Pin Id="By9Y2bnv660PIi30fBPOa2" Name="Input" Kind="InputPin" />
             <Pin Id="OziEvgyPfJwOEo8fMIXHaw" Name="Timecode" Kind="OutputPin" />
           </Node>
-          <Pad Id="PTAm4OOwoMnLVe4gENHohB" Comment="" Bounds="777,707,190,132" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="RzxxBf5bXBTO2mykFoFKIz" Comment="TV Standard" Bounds="911,426,63,58" ShowValueBox="true" isIOBox="true" Value="TV525_60i">
+          <Pad Id="PTAm4OOwoMnLVe4gENHohB" Comment="" Bounds="1140,817,190,132" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="RzxxBf5bXBTO2mykFoFKIz" Comment="TV Standard" Bounds="1274,536,63,58" ShowValueBox="true" isIOBox="true" Value="TV525_60i">
             <p:TypeAnnotation LastCategoryFullName="Audio.LTC" LastDependency="VL.Audio.LTC.vl">
               <Choice Kind="TypeFlag" Name="TVStandard" />
             </p:TypeAnnotation>
@@ -195,12 +195,12 @@
               <p:selectionmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.SelectionModeEnum">VerticalList</p:selectionmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="PcvqV7CbsWcNRHzOZ0MO3j" Comment="BG Flags" Bounds="955,496,110,15" ShowValueBox="true" isIOBox="true" Value="NONE">
+          <Pad Id="PcvqV7CbsWcNRHzOZ0MO3j" Comment="BG Flags" Bounds="1318,606,110,15" ShowValueBox="true" isIOBox="true" Value="NONE">
             <p:TypeAnnotation LastCategoryFullName="Audio.LTC" LastDependency="VL.Audio.LTC.vl">
               <Choice Kind="TypeFlag" Name="BGFlags" />
             </p:TypeAnnotation>
           </Pad>
-          <Node Bounds="1008,702,65,26" Id="OywriBWorO1MClwh6BnnSb">
+          <Node Bounds="1371,812,65,26" Id="OywriBWorO1MClwh6BnnSb">
             <p:NodeReference LastCategoryFullName="Collections.Sequence" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="MutableInterfaceType" Name="Sequence" NeedsToBeDirectParent="true" />
@@ -209,7 +209,7 @@
             <Pin Id="V1saMtk9GGJNDWcW24Wd5R" Name="Input" Kind="InputPin" />
             <Pin Id="GKoOOcp0Xc6LI9ScH6QQOg" Name="Result" Kind="OutputPin" />
           </Node>
-          <Node Bounds="1008,782,60,19" Id="MvRjRnDE6vSO7UJY2DOXxN">
+          <Node Bounds="1371,892,60,19" Id="MvRjRnDE6vSO7UJY2DOXxN">
             <p:NodeReference LastCategoryFullName="Audio.Sink" LastDependency="VL.Audio.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="AudioOut" />
@@ -218,8 +218,8 @@
             <Pin Id="BkFMo1fR6O7OrKEtiMcitz" Name="Input" Kind="InputPin" />
             <Pin Id="CBUH4OEOqdFOQiW4vPWunz" Name="Channel Offset" Kind="InputPin" />
           </Node>
-          <Pad Id="U8FOSeqx8GHMG4zwOrEn0Z" Comment="make sure to turn down the volume" Bounds="1010,765,10,10" ShowValueBox="true" isIOBox="true" />
-          <Node Bounds="344,968,65,19" Id="N6D4rp20wVMM6LpXVgES5Q">
+          <Pad Id="U8FOSeqx8GHMG4zwOrEn0Z" Comment="make sure to turn down the volume" Bounds="1373,875,10,10" ShowValueBox="true" isIOBox="true" />
+          <Node Bounds="347,1078,65,19" Id="N6D4rp20wVMM6LpXVgES5Q">
             <p:NodeReference LastCategoryFullName="Collections.Spread" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Queue" />
@@ -231,12 +231,12 @@
             <Pin Id="DYs5zMMWmHsPwpFA8QYt3s" Name="Insert" Kind="InputPin" />
             <Pin Id="Do2JaNOg3l3OzdBoXci4c1" Name="Output" Kind="OutputPin" />
           </Node>
-          <Pad Id="QFWKASz6gjwOaL78OwCnBK" Comment="" Bounds="346,1013,41,939" ShowValueBox="true" isIOBox="true">
+          <Pad Id="QFWKASz6gjwOaL78OwCnBK" Comment="" Bounds="349,1123,41,939" ShowValueBox="true" isIOBox="true">
             <p:ValueBoxSettings>
               <p:maxvisibleentries p:Type="Int32">60</p:maxvisibleentries>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="Uqa14KyfdvJO2fk3ZBPfat" Comment="Insert" Bounds="406,941,35,15" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="Uqa14KyfdvJO2fk3ZBPfat" Comment="Insert" Bounds="409,1051,35,15" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
             </p:TypeAnnotation>
@@ -244,7 +244,7 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Node Bounds="883,927,61,19" Id="NAYYjWa1ERgLnVU6GQmH2C">
+          <Node Bounds="1246,1037,61,19" Id="NAYYjWa1ERgLnVU6GQmH2C">
             <p:NodeReference LastCategoryFullName="System.Application" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="MainLoop" />
@@ -260,17 +260,17 @@
             <Pin Id="J8nkWPYqTRHOTVBiRgimbW" Name="Incremental FPS" Kind="OutputPin" />
             <Pin Id="CQRJfBmdAwVMSfVvqzVxnd" Name="Wait Accuracy" Kind="OutputPin" IsHidden="true" />
           </Node>
-          <Pad Id="IUxWawLiJIONacvZSdmcQ2" Comment="Max FPS" Bounds="885,895,35,15" ShowValueBox="true" isIOBox="true" Value="60">
+          <Pad Id="IUxWawLiJIONacvZSdmcQ2" Comment="Max FPS" Bounds="1248,1005,35,15" ShowValueBox="true" isIOBox="true" Value="60">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Float32" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="G1P8RJL8W50PeMc1Vdlec2" Comment="Target FPS" Bounds="819,1005,25,16" ShowValueBox="true" isIOBox="true" Value="60">
+          <Pad Id="G1P8RJL8W50PeMc1Vdlec2" Comment="Target FPS" Bounds="1182,1115,25,16" ShowValueBox="true" isIOBox="true" Value="60">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Integer32" />
             </p:TypeAnnotation>
           </Pad>
-          <Node Bounds="999,892,86,19" Id="FqWVGP4XzKkNgoOMVEqEPt">
+          <Node Bounds="1362,1002,86,19" Id="FqWVGP4XzKkNgoOMVEqEPt">
             <p:NodeReference LastCategoryFullName="Animation.IFrameClock" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="TimeDifference (Float32)" />
@@ -278,7 +278,7 @@
             <Pin Id="BYzDtaLX8QDOTovh8Scb9K" Name="Clock" Kind="InputPin" />
             <Pin Id="D5ChvF69omhMOkDVutQLH4" Name="Result" Kind="OutputPin" />
           </Node>
-          <Node Bounds="979,931,25,19" Id="IhyttU1GiWHLT4iS9eU2Y4">
+          <Node Bounds="1342,1041,25,19" Id="IhyttU1GiWHLT4iS9eU2Y4">
             <p:NodeReference LastCategoryFullName="Math" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="/" />
@@ -291,8 +291,8 @@
             <Pin Id="M3e9MiHTproMVcV7Hocdnx" Name="Input 2" Kind="InputPin" />
             <Pin Id="L6UKdBHDqI0MGyjCNNoihg" Name="Output" Kind="OutputPin" />
           </Node>
-          <Pad Id="HKpCqKNIHFlNtwgSYMI670" Comment="" Bounds="981,973,35,15" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="I5cD9iLFqrnPO68nSFlEpz" Comment="Interpolate" Bounds="838,1048,35,35" ShowValueBox="true" isIOBox="true" Value="True">
+          <Pad Id="HKpCqKNIHFlNtwgSYMI670" Comment="" Bounds="1344,1083,35,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="I5cD9iLFqrnPO68nSFlEpz" Comment="Interpolate" Bounds="1201,1158,35,35" ShowValueBox="true" isIOBox="true" Value="True">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
             </p:TypeAnnotation>
@@ -300,7 +300,7 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Node Bounds="817,964,35,19" Id="AK2b2rsWKB0PBGzRS3Ivhm">
+          <Node Bounds="1180,1074,35,19" Id="AK2b2rsWKB0PBGzRS3Ivhm">
             <p:NodeReference LastCategoryFullName="Math" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="Frac" />
@@ -309,7 +309,7 @@
             <Pin Id="EmGSDxacMTZQGVoQyCy0aW" Name="Whole Part" Kind="OutputPin" />
             <Pin Id="AxUQK8mwFqrL15AOkc4pGS" Name="Fractional Part" Kind="OutputPin" />
           </Node>
-          <Pad Id="MvPFb7z4fSbM3W0T0ydSX5" Bounds="861,428,39,58" ShowValueBox="true" isIOBox="true" Value="30 FPS&#xD;&#xA;25 FPS&#xD;&#xA;30 FPS&#xD;&#xA;24 FPS">
+          <Pad Id="MvPFb7z4fSbM3W0T0ydSX5" Bounds="1224,538,39,58" ShowValueBox="true" isIOBox="true" Value="30 FPS&#xD;&#xA;25 FPS&#xD;&#xA;30 FPS&#xD;&#xA;24 FPS">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -318,7 +318,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="G9qTtpsTBOYPnYskda4I1w" Bounds="1088,896,347,159" ShowValueBox="true" isIOBox="true" Value="Just for demo purposes. &#xD;&#xA;Aside:&#xD;&#xA;Ideally the Mainloop should be only limited by the VSync of the GPU, at least if you have visual putput / a window. Set the Present Interval of one of your windows to Default / One and the Mainloop to some high multiple of the monitor refresh rate, e.g. if your monitor runs at 60Hz set the Mainloop to 180 FPS or so.">
+          <Pad Id="G9qTtpsTBOYPnYskda4I1w" Bounds="1451,1006,347,159" ShowValueBox="true" isIOBox="true" Value="Just for demo purposes. &#xD;&#xA;Aside:&#xD;&#xA;Ideally the Mainloop should be only limited by the VSync of the GPU, at least if you have visual putput / a window. Set the Present Interval of one of your windows to Default / One and the Mainloop to some high multiple of the monitor refresh rate, e.g. if your monitor runs at 60Hz set the Mainloop to 180 FPS or so.">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -327,7 +327,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="ATxvRf2zjU6Me4vW80nNl2" Bounds="399,1013,300,647" ShowValueBox="true" isIOBox="true" Value="LTC only supports framerates of 24, 25 and 30 FPS that are tradionally encoutered in the context of film/video. As long as software runs at those framerates all should be fine and dandy, seconds will be split into [0 ... 23], [0 ... 24], [0 ... 29] frames.&#xD;&#xA;&#xD;&#xA;60 (or 50) fps like you'd more likely use in real time media are not supported though. You need to pick a LTC standard that is a divisor of your desired framerate. The count of frames returned will then be multiplied by the ratio of that division. So for a desired Mainloop framerate of 60 FPS you'd pick an LTC standard that uses 30 FPS, the decoder will then ideally return the following frames [0,0,1,1,2,2,3,3 ... 29,29] and you need to account for that (see Interpolate on the ToSeconds node).&#xD;&#xA;&#xD;&#xA;But things can get finicky.&#xD;&#xA;During testing I encountered for example the following [0,0,1,1,1,2,3,3 ... 29,29] and wirmachenbunt even reported that some frames totally got lost like [0,0,1,1,1,1,3,3 ... 29,29]. &#xD;&#xA;From what I can tell this is more likely to happen when using WASAPI or ASIO with a audio buffer size &gt;256. Might be hardware and/or driver dependend. So make sure to check the continuity of the incoming frames (by queuing them for example).&#xD;&#xA;&#xD;&#xA;TBH if you are working in a professional context and can spare the money using a dedicated timecode reader card might be the better option.">
+          <Pad Id="ATxvRf2zjU6Me4vW80nNl2" Bounds="402,1123,300,647" ShowValueBox="true" isIOBox="true" Value="LTC only supports framerates of 24, 25 and 30 FPS that are tradionally encoutered in the context of film/video. As long as software runs at those framerates all should be fine and dandy, seconds will be split into [0 ... 23], [0 ... 24], [0 ... 29] frames.&#xD;&#xA;&#xD;&#xA;60 (or 50) fps like you'd more likely use in real time media are not supported though. You need to pick a LTC standard that is a divisor of your desired framerate. The count of frames returned will then be multiplied by the ratio of that division. So for a desired Mainloop framerate of 60 FPS you'd pick an LTC standard that uses 30 FPS, the decoder will then ideally return the following frames [0,0,1,1,2,2,3,3 ... 29,29] and you need to account for that (see Interpolate on the ToSeconds node).&#xD;&#xA;&#xD;&#xA;But things can get finicky.&#xD;&#xA;During testing I encountered for example the following [0,0,1,1,1,2,3,3 ... 29,29] and wirmachenbunt even reported that some frames totally got lost like [0,0,1,1,1,1,3,3 ... 29,29]. &#xD;&#xA;From what I can tell this is more likely to happen when using WASAPI or ASIO with a audio buffer size &gt;256. Might be hardware and/or driver dependend. So make sure to check the continuity of the incoming frames (by queuing them for example).&#xD;&#xA;&#xD;&#xA;TBH if you are working in a professional context and can spare the money using a dedicated timecode reader card might be the better option.">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -336,7 +336,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="AdcxjXB4pgtM1omIt8TDvA" Bounds="877,1092,267,92" ShowValueBox="true" isIOBox="true" Value="&quot;Interpolation&quot; only works with integer framerate ratios, e.g. a LTC framerate of 30 FPS works with a mainloop running at 60 or 90 FPS.">
+          <Pad Id="AdcxjXB4pgtM1omIt8TDvA" Bounds="1208,1200,292,94" ShowValueBox="true" isIOBox="true" Value="&quot;Interpolation&quot; version only works with integer framerate ratios, e.g. a LTC framerate of 30 FPS works with a mainloop running at 60 or 90 FPS. &#xD;&#xA;Does not account for discontinuities in incoming  frames.">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -345,7 +345,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="MtQHGwA74NWPh54gxLxO6i" Bounds="95,630,264,20" ShowValueBox="true" isIOBox="true" Value="Create a TimeCode and set it by seeking ...">
+          <Pad Id="MtQHGwA74NWPh54gxLxO6i" Bounds="98,740,264,20" ShowValueBox="true" isIOBox="true" Value="Create a TimeCode and set it by seeking ...">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -354,12 +354,12 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="LdFiyC98H1rK9sDOHJQTRa" Comment="Seek" Bounds="318,557,35,35" ShowValueBox="true" isIOBox="true">
+          <Pad Id="LdFiyC98H1rK9sDOHJQTRa" Comment="Seek" Bounds="321,667,35,35" ShowValueBox="true" isIOBox="true">
             <p:ValueBoxSettings>
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="Ab0PfsWo4OhLhqTtyGIKBe" Bounds="773,626,278,19" ShowValueBox="true" isIOBox="true" Value="... or just let the encoder &quot;play&quot; the TimeCode">
+          <Pad Id="Ab0PfsWo4OhLhqTtyGIKBe" Bounds="1136,736,278,19" ShowValueBox="true" isIOBox="true" Value="... or just let the encoder &quot;play&quot; the TimeCode">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -368,7 +368,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="OSOueogAMbPL0fv601qmBX" Bounds="251,287,200,61" ShowValueBox="true" isIOBox="true" Value="When changing the  LTC FPS | TVStandard it might be better to restart the patch.">
+          <Pad Id="OSOueogAMbPL0fv601qmBX" Bounds="254,397,200,61" ShowValueBox="true" isIOBox="true" Value="When changing the  LTC FPS | TVStandard it might be better to restart the patch.">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -377,7 +377,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="KBEBWPGZoxYNPD3yDzXan0" Bounds="88,97,641,81" ShowValueBox="true" isIOBox="true" Value="Code borrowed from VVVV.Audio by Tebjan Halm aka tonfilm . Depends on libtc by Robin Gareus and LTCSharp by Elliot Woods.&#xD;&#xA;&#xD;&#xA;Initial development and testing sponsored by:">
+          <Pad Id="KBEBWPGZoxYNPD3yDzXan0" Bounds="90,105,641,81" ShowValueBox="true" isIOBox="true" Value="Code borrowed from VVVV.Audio by Tebjan Halm aka tonfilm . Depends on libtc by Robin Gareus and LTCSharp by Elliot Woods.&#xD;&#xA;&#xD;&#xA;Initial development and testing sponsored by:">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -386,7 +386,61 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="Mfxhf9GyUa9M0SrVwDNKdt" Bounds="90,173,247,19" ShowValueBox="true" isIOBox="true" Value="https://www.wirmachenbunt.de">
+          <Pad Id="Mfxhf9GyUa9M0SrVwDNKdt" Bounds="90,181,247,19" ShowValueBox="true" isIOBox="true" Value="https://www.wirmachenbunt.de">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Node Bounds="1031,1193,65,19" Id="KLQtvx6h0kJOEx3AohLDhz">
+            <p:NodeReference LastCategoryFullName="Audio.LTC" LastDependency="VL.Audio.LTC.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="ToSeconds (Timecode FreeWheel)" />
+            </p:NodeReference>
+            <Pin Id="ByWgPlX3rkHO8TWWLHGpAK" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="H7VwKNYqxWiQNe0tdNtAWo" Name="Input" Kind="InputPin" />
+            <Pin Id="BuTyE6BUCdEQdt01FmxSSo" Name="FPS" Kind="InputPin" />
+            <Pin Id="AyaLgTKyHlANnVBHJStuyr" Name="Safety Margin" Kind="InputPin" />
+            <Pin Id="FggqlaxHLJcO1kJbD0rAKA" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Pad Id="EZOUasJy1B7NfD5kv6YWfY" Comment="" Bounds="1033,1254,41,15" ShowValueBox="true" isIOBox="true" />
+          <Node Bounds="1102,1289,25,19" Id="SClheHgj6qqOBn6DatWe4t">
+            <p:NodeReference LastCategoryFullName="Math" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="-" />
+            </p:NodeReference>
+            <Pin Id="QOBEeSM9TQGMHPJ0rKspy4" Name="Input" Kind="InputPin" />
+            <Pin Id="NOeMPOPzwNHPunbY1vSHq1" Name="Input 2" Kind="InputPin" />
+            <Pin Id="M1iG4d59NtgMjdfEeL5SYz" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Pad Id="Uzd5Odkcm1ZPf4gUYf2XOE" Comment="" Bounds="1104,1329,65,15" ShowValueBox="true" isIOBox="true">
+            <p:ValueBoxSettings>
+              <p:precision p:Type="Int32">6</p:precision>
+              <p:stepsize p:Type="Single">0.01</p:stepsize>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="HPMhqZXhSf7NOtkPbRAIjQ" Bounds="824,1200,197,194" ShowValueBox="true" isIOBox="true" Value="&quot;FreeWheel&quot; version &#xD;&#xA;&quot;discards&quot; the incoming frames and uses a StopWatch to &quot;interpolate&quot;&#xD;&#xA;instead. Thanks to @catweasel and @nissidis for this.&#xD;&#xA;&#xD;&#xA;Should  prevent discontinuities.&#xD;&#xA;Untested in &quot;multi-client&quot; scenarios as of yet, though.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="TK6AodlCjM7O7ZAi0xFTzG" Bounds="90,237,621,19" ShowValueBox="true" isIOBox="true" Value="For some background info (or if you'll encounter any issues) please check the following forum thread:">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="ACQr35cR8QnLuk7IRt57Ax" Bounds="90,260,300,23" ShowValueBox="true" isIOBox="true" Value="https://discourse.vvvv.org/t/vl-audio-ltc/22523/">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -443,6 +497,12 @@
         <Link Id="CLjUtOxQ2moLRfZH4Du4Fp" Ids="JX4oFSjrSVTL9v6g60EuBE,V1saMtk9GGJNDWcW24Wd5R" />
         <Link Id="NxdBIxjaKqwNBDD0eAm219" Ids="JiktpPLMxiYLfS6L4LLZ6Z,LdFiyC98H1rK9sDOHJQTRa" />
         <Link Id="MURdBWdlnUmOmHgk0TJ1Op" Ids="LdFiyC98H1rK9sDOHJQTRa,LCWVSc7Ql57P8DUTLDsckZ" />
+        <Link Id="Vn9LCP1AbBwMDCXxT8amG9" Ids="SBrG4Cv3EBFMB8eHy7FryJ,BuTyE6BUCdEQdt01FmxSSo" />
+        <Link Id="JJaSZEL9dyoNI1sm2bEGEA" Ids="OziEvgyPfJwOEo8fMIXHaw,H7VwKNYqxWiQNe0tdNtAWo" />
+        <Link Id="TtMpox3vKX1NynDnj66Gcy" Ids="FggqlaxHLJcO1kJbD0rAKA,EZOUasJy1B7NfD5kv6YWfY" />
+        <Link Id="E8ASmN7KBc2OuRF5D4dbs1" Ids="FggqlaxHLJcO1kJbD0rAKA,QOBEeSM9TQGMHPJ0rKspy4" />
+        <Link Id="FzPg4GMqnQVMApbSgisepe" Ids="NQvLrTG18PjONlfGtXRlQ2,NOeMPOPzwNHPunbY1vSHq1" />
+        <Link Id="R6fagf5NYnpMhzXbrnDHQb" Ids="M1iG4d59NtgMjdfEeL5SYz,Uzd5Odkcm1ZPf4gUYf2XOE" />
       </Patch>
     </Node>
   </Patch>
