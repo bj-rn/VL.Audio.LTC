@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>VL.Audio.LTC</id>
+    <version>0.1.0</version>
+    <title>VL.Audio.LTC</title>
+    <authors>bj-rn</authors>
+    <owners>bj-rn</owners>
+    <license type="expression">LGPL-3.0-only</license>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <readme>README.md</readme>
+    <projectUrl>https://github.com/bj-rn/VL.Audio.LTC</projectUrl>
+    <summary>Encode and decode Linear (or Longitudinal) Timecode (LTC) in VL.</summary>
+    <description>A set of nodes to encode and decode Linear (or Longitudinal) Timecode (LTC) in VL.Audio.</description>
+    <copyright>Copyright © 2024</copyright>
+    <tags>VL, vvvv, gamma, audio, LTC, timecode, longitudinal, linear, encode, decode</tags>
+    
+    <group targetFramework="net6.0-windows7.0">
+      <dependencies>
+        <dependency id="VL.Audio" version="1.5.0" />
+      </dependencies>
+    </group>
+    <icon>resources\icon.png</icon>
+  </metadata>
+  <files>
+    <file src="..\*.vl"/>
+    <file src="..\lib\**\*.dll" target="lib\" exclude="" />
+    <file src="..\help\**\*.vl" target="help\"/>
+    <file src="..\README.md" />
+    <file src="..\LICENSE" />
+  </files>
+</package>
