@@ -37,7 +37,28 @@ C++/CLI libraries in .NET Core need a shim called *Ijwhost.dll* for finding and 
 Tried the "workaround" of including a manifest file for *Ijwhost.dll*. But:
 * vvvv only finds the shim when located alongside *LTCSharp.dll*, e.g. both files are in `VL.Audio.LTC\lib\net6.0-windows`
 * when the shim is located in `VL.Audio.LTC\runtimes\win-x64\native` as suggested by some vvvv doesn't pick it up
-* in neither case the shim gets copied to the output when exporting a document referencing *VL.Audio.LTC*
+* in neither case the shim gets copied to the output when exporting a document referencing *VL.Audio.LTC* when using normal [vvvv library workflow](https://thegraybook.vvvv.org/reference/extending/creating.html)
+
+Thanks to [Elias](https://github.com/azeno) for a [PR](https://github.com/bj-rn/VL.Audio.LTC/pull/1) and helping me to figure out that the copying of the shim works when VL.Audio.LTC is referenced as "real" package.
+
+Unfortunately this makes debugging of exporting executables during development a bit of a pita.
+
+So for now one has to:
+
+* Make changes
+* right-click the VL.Audio.LTC project inside VS and select the `Pack` command
+* this will create a nuget package inside the pkg folder, for example:
+`X:\path\to\_vl-libs\VL.Audio.LTC\pkg`
+
+To test the package you can run the following nuget command to install the package: 
+`nuget install VL.Audio.LTC -source X:\path\to\_vl-libs\VL.Audio.LTC\pkg;nuget.org`
+For testing the export you'll have to add to add your local path (`X:\path..`) to your *nuget.config* file which should be in
+`C:\Users\yourusername\AppData\Roaming\NuGet`.
+
+Alternatively move the created package from the `pkg` folder
+into the root folder of `*VL.Audio.LTC* and start vvvv with the follwing arguments:
+`start X:\vvvv\vvvv_gamma_6.2\vvvv.exe --package-repositories X:\path\to\_vl-libs\ --export-package-sources D:\path\to\_vl-libs\`
+
 
 ---
 
