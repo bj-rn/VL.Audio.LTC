@@ -15,11 +15,12 @@
     <copyright>Copyright © 2024</copyright>
     <tags>VL, vvvv, gamma, audio, LTC, timecode, longitudinal, linear, encode, decode</tags>
     
-    <group targetFramework="net6.0-windows7.0">
-      <dependencies>
+    <dependencies>
+      <group targetFramework="net6.0-windows7.0">
         <dependency id="VL.Audio" version="1.5.0" />
-      </dependencies>
-    </group>
+      </group>
+    </dependencies>
+
     <icon>resources\icon.png</icon>
   </metadata>
   <files>
