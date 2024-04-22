@@ -3,7 +3,7 @@
 .vl/
 
 # Build folder
-# lib/
+lib/
 lib/net472/*.exp
 lib/net472/*.lib
 
@@ -305,4 +305,3 @@ _Pvt_Extensions
 # Python Tools for Visual Studio (PTVS)
 __pycache__/
 *.pyc
-/lib/
