@@ -3,7 +3,7 @@
 .vl/
 
 # Build folder
-lib/
+lib/*/*.json
 lib/net472/*.exp
 lib/net472/*.lib
 
