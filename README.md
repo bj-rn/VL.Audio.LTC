@@ -1,5 +1,5 @@
 # VL.Audio.LTC
-[![Nuget (with prereleases)](https://img.shields.io/nuget/vpre/VL.Addons?style=flat-square)](https://www.nuget.org/packages/VL.Audio.LTC)
+[![Nuget (with prereleases)](https://img.shields.io/nuget/vpre/VL.Audio.LTC?style=flat-square)](https://www.nuget.org/packages/VL.Audio.LTC)
 
 A set of nodes to encode and decode [Linear (or Longitudinal) Timecode (LTC)](https://en.wikipedia.org/wiki/Linear_timecode) in [VL.Audio](https://github.com/vvvv/VL.Audio).
 
