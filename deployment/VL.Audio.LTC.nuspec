@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
   <metadata>
     <id>VL.Audio.LTC</id>
-    <version>0.1.0</version>
+    <version>0.1.1</version>
     <title>VL.Audio.LTC</title>
     <authors>bj-rn</authors>
     <owners>bj-rn</owners>
@@ -16,8 +16,8 @@
     <tags>VL, vvvv, gamma, audio, LTC, timecode, longitudinal, linear, encode, decode</tags>
     
     <dependencies>
-      <group targetFramework="net6.0-windows7.0">
-        <dependency id="VL.Audio" version="1.5.0" />
+      <group targetFramework="net8.0-windows7.0">
+        <dependency id="VL.Audio" version="1.8.2" />
       </group>
     </dependencies>
   </metadata>
