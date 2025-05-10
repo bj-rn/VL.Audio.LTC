@@ -72,3 +72,6 @@ VL.Audio, VVVV.Audio and libtc are released under LGPL-3.0 license. LTCSharp is 
 
 #### Credits
 Initial development and release sponsored by [wirmachenbunt](https://wirmachenbunt.de/).
+
+---
+[Support me on Ko-fi](https://ko-fi.com/Q5Q61EQB8X)
