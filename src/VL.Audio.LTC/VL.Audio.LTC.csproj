@@ -9,13 +9,13 @@
     <Platforms>x64</Platforms>
 
     <!-- Package properties https://learn.microsoft.com/en-us/nuget/create-packages/creating-a-package-msbuild -->
-    <Version>0.0.1</Version>
+    <Version>0.1.2</Version>
   </PropertyGroup>
 
   <ItemGroup>
     <!-- Suppress dependency on package level - already delivered by VL.Audio -->
-    <PackageReference Include="NAudio" Version="2.0.1" PrivateAssets="all" />
-    <PackageReference Include="VL.Audio" Version="1.8.2" />
+    <PackageReference Include="NAudio" Version="2.2.1" PrivateAssets="all" />
+    <PackageReference Include="VL.Audio" Version="1.9.17" />
   </ItemGroup>
 
   <ItemGroup>
